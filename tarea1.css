@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  background-image: linear-gradient(to left, red, yellow, orchid, aqua, orange);
+}
+
+#entradaFecha {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#cuentaAtras {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 2);
+}
+
+.verde {
+  background-color: rgb(144, 229, 16);
+  border: 5px solid black;
+}
+
+.naranja {
+  background-color: orange;
+  border: 5px solid black;
+}
+
+.rojo {
+  background-color: red;
+  border: 5px solid black;
+}
