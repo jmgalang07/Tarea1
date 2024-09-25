@@ -13,7 +13,7 @@ h1 {
   background-image: linear-gradient(to left, red, yellow, orchid, aqua, orange);
 }
 
-#entradaFecha {
+#entryDate {
   padding: 10px;
   border: 2px solid black;
   border-radius: 10px;
@@ -29,20 +29,20 @@ h1 {
   border-radius: 10px;
   text-align: center;
   min-width: 300px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 2);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 2);
 }
 
-.verde {
+.green {
   background-color: rgb(144, 229, 16);
   border: 5px solid black;
 }
 
-.naranja {
+.orange {
   background-color: orange;
   border: 5px solid black;
 }
 
-.rojo {
+.red {
   background-color: red;
   border: 5px solid black;
 }
