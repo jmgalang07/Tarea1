@@ -7,7 +7,7 @@ bodyElement.append(titleElement); //Lo añado al body
 
 // Creo un elemento div para la pantallaCuentaAtrás
 const screenCountDown = document.createElement("div");
-screenCountDown.id = "cuentaAtras"; 
+screenCountDown.id = "cuentaAtras";
 bodyElement.append(screenCountDown); //Lo añado al body
 
 // Creo el input para seleccionar la fecha (entradaFecha)
@@ -32,10 +32,11 @@ function actualizarCuentaAtras() {
   const now = new Date();
   const timeRemaining = targetdate - now;
 
-  // Si el tiempo se agota, detener el contador (tiempoRestante)
+  // Si el tiempo se agota, poner fondo en rojo con el tiempo a 0 (tiempoRestante)
   if (timeRemaining <= 0) {
-    screenCountDown.classList.add("red")
-    screenCountDown.innerHTML = "0 meses, 0 días, 0 horas, 0 minutos, 0 segundos";
+    screenCountDown.classList.add("red");
+    screenCountDown.innerHTML =
+      "0 meses, 0 días, 0 horas, 0 minutos, 0 segundos";
     return;
   }
 
@@ -59,13 +60,13 @@ function actualizarCuentaAtras() {
                 ${seconds} segundos
             `;
 
-  // Limpiar clases anteriores
+  // Limpio las clases anteriores de los colores
   screenCountDown.classList.remove("green", "orange", "red");
 
   // Cambio el color del contador según el tiempo restante
-  const unMes = 1000 * 60 * 60 * 24 * 30;  //Calculo de un mes
-  const dosSemanas = 1000 * 60 * 60 * 24 * 14;  //Calculo de dos semanas
-  const unaSemana = 1000 * 60 * 60 * 24 * 7;  //Calculo de una semana
+  const unMes = 1000 * 60 * 60 * 24 * 30; //Calculo de un mes
+  const dosSemanas = 1000 * 60 * 60 * 24 * 14; //Calculo de dos semanas
+  const unaSemana = 1000 * 60 * 60 * 24 * 7; //Calculo de una semana
 
   if (timeRemaining > unMes) {
     screenCountDown.classList.add("green"); // Más de un mes
@@ -78,7 +79,7 @@ function actualizarCuentaAtras() {
   }
 }
 
-// Establezco un contador que actualiza la cuenta atrás cada segundo
-let counter = setInterval(() => {
-  actualizarCuentaAtras();
-}, 1000);
+  // Establezco un contador que actualiza la cuenta atrás cada segundo
+  let counter = setInterval(() => {
+    actualizarCuentaAtras();
+  }, 1000);
