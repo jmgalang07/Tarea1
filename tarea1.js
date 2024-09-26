@@ -2,7 +2,7 @@ const bodyElement = document.getElementById("main");
 
 // Creo el título de la tarea
 const titleElement = document.createElement("h1");
-titleElement.innerText = "Mi cumpleaños (19/12/2024)";
+titleElement.innerText = "My birthday (19/12/2024)";
 bodyElement.append(titleElement); //Lo añado al body
 
 // Creo un elemento div para la pantallaCuentaAtrás
@@ -36,7 +36,7 @@ function actualizarCuentaAtras() {
   if (timeRemaining <= 0) {
     screenCountDown.classList.add("red");
     screenCountDown.innerHTML =
-      "0 meses, 0 días, 0 horas, 0 minutos, 0 segundos";
+      "  ¡¡FELICIDADES!!  ";
     return;
   }
 
